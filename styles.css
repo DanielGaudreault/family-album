@@ -47,50 +47,41 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 40px;
+/* Styles for the hero section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
 }
 
-.container h2 {
+.hero h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.container p {
-    margin-bottom: 10px;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-form {
-    margin-top: 20px;
-}
-
-form div {
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
+.cta-button {
+    display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #555;
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
 footer {
