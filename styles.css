@@ -4,11 +4,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto; /* Center the container */
+    margin: auto; /* Center the container */
     padding: 0 20px;
 }
 
@@ -38,11 +41,15 @@ nav ul li a {
 }
 
 main {
-    text-align: center;
+    flex: 1; /* Take remaining vertical space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 section {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 footer {
@@ -50,8 +57,4 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-
-footer p {
-    margin: 0;
 }
