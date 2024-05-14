@@ -1,5 +1,3 @@
-// recommendation_system.js
-
 // Sample user-item interaction data
 var userItemData = {
     'User1': {'Item1': 5, 'Item2': 4, 'Item3': 0, 'Item4': 1},
