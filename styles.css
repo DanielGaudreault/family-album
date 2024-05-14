@@ -1,12 +1,14 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container */
     padding: 0 20px;
 }
 
