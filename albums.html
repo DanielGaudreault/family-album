@@ -9,43 +9,89 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
         }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            padding: 20px;
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
         }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            flex-basis: calc(33.333% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery-item {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .gallery-item {
+                flex-basis: 100%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1 style="text-align: center;">Family Photo Album</h1>
+        <h1>Family Photo Album</h1>
     </header>
-    
+
     <main>
         <div class="container">
             <div class="gallery">
-                <img src="photo1.jpg" alt="Family Photo 1">
-                <img src="photo2.jpg" alt="Family Photo 2">
-                <img src="photo3.jpg" alt="Family Photo 3">
-                <!-- Add more photos as needed -->
+                <div class="gallery-item">
+                    <img src="photo1.jpg" alt="Family Photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Family Photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="Family Photo 3">
+                </div>
+                <!-- Add more images as needed -->
             </div>
         </div>
     </main>
-    
-    <footer style="text-align: center; padding: 20px;">
+
+    <footer>
         <p>&copy; 2024 Family Album. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
