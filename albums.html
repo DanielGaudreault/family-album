@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Albums</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Family Photo Album</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Family Albums</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="albums.html">Albums</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="family.html">Family Members</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 style="text-align: center;">Family Photo Album</h1>
     </header>
-
+    
     <main>
-        <section class="albums">
-            <div class="container">
-                <h2>Our Family Photos</h2>
-                <div class="photo-gallery">
-                    <!-- Add your images here -->
-                    <div class="photo">
-                        <img src="album1.jpg" alt="Family Vacation 2023">
-                        <p>Family Vacation 2023</p>
-                    </div>
-                    <div class="photo">
-                        <img src="album2.jpg" alt="Birthday Celebration">
-                        <p>Grandma's 80th Birthday</p>
-                    </div>
-                    <div class="photo">
-                        <img src="album3.jpg" alt="Christmas 2022">
-                        <p>Christmas 2022</p>
-                    </div>
-                    <!-- Add more photos as needed -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
         <div class="container">
-            <p>&copy; 2024 Our Family Album. All rights reserved.</p>
+            <div class="gallery">
+                <img src="photo1.jpg" alt="Family Photo 1">
+                <img src="photo2.jpg" alt="Family Photo 2">
+                <img src="photo3.jpg" alt="Family Photo 3">
+                <!-- Add more photos as needed -->
+            </div>
         </div>
+    </main>
+    
+    <footer style="text-align: center; padding: 20px;">
+        <p>&copy; 2024 Family Album. All rights reserved.</p>
     </footer>
 </body>
 </html>
