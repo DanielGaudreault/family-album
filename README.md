@@ -1,6 +1,6 @@
 # Family Photo Album Website
 
-Welcome to **Our Family Album**! Here You can visit the website [here](https://myriamcole.github.io/mywebsite/index.html)., you’ll find cherished family memories, from special events to family photos, and learn more about our family members.
+Welcome to **Our Family Album**!, you’ll find cherished family memories, from special events to family photos, and learn more about our family members.
 
 ## Table of Contents
 
