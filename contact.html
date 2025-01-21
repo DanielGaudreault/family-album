@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Our Family Album</title>
+    <meta name="description" content="Get in touch with us for any inquiries or to share your thoughts.">
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/main logo 2.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <!-- Android Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-chrome-192x192.png">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Contact Us</h1>
-            <nav>
+            <!-- Logo and Title -->
+            <div class="logo-title">
+                <img src="images/main logo 2.png" alt="Our Family Album Logo" class="logo">
+                <h1>Our Family Album</h1>
+            </div>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="albums.html">Albums</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="family.html">Family Members</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="contact">
+        <section class="contact" aria-labelledby="contact-heading">
             <div class="container">
-                <h2>Get in Touch</h2>
-                <p>If you'd like to reach out, feel free to email us at <a href="mailto:dan.gaudreault87@gmail.com">dan.gaudreault87@gmail.com</a> or call us at (514) 291-8701.</p>
+                <h2 id="contact-heading">Get in Touch</h2>
+                <p>If you'd like to reach out, feel free to email us at <a href="mailto:dan.gaudreault87@gmail.com">dan.gaudreault87@gmail.com</a> or call us at <a href="tel:5142918701">(514) 291-8701</a>.</p>
             </div>
         </section>
     </main>
@@ -34,6 +45,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Our Family Album. All rights reserved.</p>
+            <p>Made with ❤️ by Daniel Gaudreault</p>
         </div>
     </footer>
 </body>
