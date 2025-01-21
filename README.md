@@ -37,4 +37,4 @@ This website is licensed under the [MIT License](LICENSE). Feel free to explore,
 
 ---
 
-[Visit our website](https://danielgaudreault.github.io/blazer/) to explore our family albums and memories!
+[Visit our website](https://danielgaudreault.github.io/family-album/) to explore our family albums and memories!
