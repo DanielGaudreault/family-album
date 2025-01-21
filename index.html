@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Family Album</title>
+    <meta name="description" content="A digital album of our family's cherished memories and moments.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="images/main logo 2.png"> <!-- Updated Favicon -->
-    <!-- For iOS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png"> <!-- Updated Favicon -->
-    <!-- For Android -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/main-logo-2.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <!-- Android Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-chrome-192x192.png">
+    <!-- Preload Images for Better Performance -->
+    <link rel="preload" href="album1.jpg" as="image">
+    <link rel="preload" href="album2.jpg" as="image">
+    <link rel="preload" href="album3.jpg" as="image">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Welcome to Our Family Album</h1>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="albums.html">Albums</a></li>
@@ -27,41 +34,50 @@
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
             <div class="container">
-                <h2>Our Special Memories</h2>
+                <h2 id="hero-heading">Our Special Memories</h2>
                 <p>Take a look through our cherished family moments captured over the years.</p>
                 <a href="albums.html" class="cta-button">View Albums</a>
             </div>
         </section>
 
-        <section class="albums">
+        <!-- Albums Section -->
+        <section class="albums" aria-labelledby="albums-heading">
             <div class="container">
-                <h3>Family Albums</h3>
+                <h3 id="albums-heading">Family Albums</h3>
                 <div class="album-list">
                     <div class="album">
-                        <img src="album1.jpg" alt="Family Vacation 2023">
+                        <img src="album1.jpg" alt="Family Vacation 2023" loading="lazy">
                         <h4>Family Vacation 2023</h4>
                     </div>
                     <div class="album">
-                        <img src="album2.jpg" alt="Birthday Celebration">
+                        <img src="album2.jpg" alt="Grandma's 80th Birthday Celebration" loading="lazy">
                         <h4>Grandma's 80th Birthday</h4>
                     </div>
                     <div class="album">
-                        <img src="album3.jpg" alt="Christmas 2022">
+                        <img src="album3.jpg" alt="Christmas 2022 Family Gathering" loading="lazy">
                         <h4>Christmas 2022</h4>
                     </div>
                     <!-- Add more albums as needed -->
                 </div>
             </div>
         </section>
-        
-        <!-- Additional sections for family events or member introductions could go here -->
+
+        <!-- Optional: Family Events Section -->
+        <section class="events" aria-labelledby="events-heading">
+            <div class="container">
+                <h3 id="events-heading">Upcoming Family Events</h3>
+                <p>Stay tuned for our next family gathering!</p>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2025 Our Family Album. All rights reserved.</p>
+            <p>Made with ❤️ by [Your Name]</p>
         </div>
     </footer>
 </body>
