@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Events</title>
+    <title>Family Events - Our Family Album</title>
+    <meta name="description" content="Explore our family's special events and cherished memories.">
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/main%20logo%202.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <!-- Android Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-chrome-192x192.png">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Family Events</h1>
-            <nav>
+            <!-- Logo and Title -->
+            <div class="logo-title">
+                <img src="images/main%20logo%202.png" alt="Our Family Album Logo" class="logo">
+                <h1>Our Family Album</h1>
+            </div>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="albums.html">Albums</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="events.html" aria-current="page">Events</a></li>
                     <li><a href="family.html">Family Members</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -23,13 +34,20 @@
     </header>
 
     <main>
-        <section class="events">
+        <!-- Events Section -->
+        <section class="events" aria-labelledby="events-heading">
             <div class="container">
-                <h2>Special Family Events</h2>
-                <ul>
-                    <li><strong>July 2023:</strong> Family Vacation in Hawaii</li>
-                    <li><strong>October 2022:</strong> Grandma's 80th Birthday Celebration</li>
-                    <li><strong>December 2022:</strong> Christmas at the Family House</li>
+                <h2 id="events-heading">Special Family Events</h2>
+                <ul class="event-list">
+                    <li class="event-item">
+                        <strong>July 2023:</strong> Family Vacation in Hawaii
+                    </li>
+                    <li class="event-item">
+                        <strong>October 2022:</strong> Grandma's 80th Birthday Celebration
+                    </li>
+                    <li class="event-item">
+                        <strong>December 2022:</strong> Christmas at the Family House
+                    </li>
                     <!-- Add more events as needed -->
                 </ul>
             </div>
@@ -39,6 +57,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Our Family Album. All rights reserved.</p>
+            <p>Made with ❤️ by Daniel Gaudreault</p>
         </div>
     </footer>
 </body>
