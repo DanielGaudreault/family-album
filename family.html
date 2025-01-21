@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet the Family</title>
+    <title>Meet the Family - Our Family Album</title>
+    <meta name="description" content="Get to know the members of our wonderful family.">
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/main logo 2.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <!-- Android Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-chrome-192x192.png">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Meet the Family</h1>
-            <nav>
+            <!-- Logo and Title -->
+            <div class="logo-title">
+                <img src="images/main logo 2.png" alt="Our Family Album Logo" class="logo">
+                <h1>Our Family Album</h1>
+            </div>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="albums.html">Albums</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="family.html">Family Members</a></li>
+                    <li><a href="family.html" aria-current="page">Family Members</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -23,16 +34,28 @@
     </header>
 
     <main>
-        <section class="family">
+        <section class="family" aria-labelledby="family-heading">
             <div class="container">
-                <h2>Our Family Members</h2>
-                <ul>
-                    <li><strong>Helen:</strong> The family patriarch and the life of the party.</li>
-                    <li><strong>Marie:</strong> The heart and soul of the family.</li>
-                    <li><strong>Daniel:</strong> The tech-savvy adventurer of the family.</li>
-                    <li><strong>Madison:</strong> The creative and artistic member.</li>
-                    <li><strong>Katie:</strong> The creative and artistic member.</li>
-                    <li><strong>Micheal:</strong> The creative and artistic member.</li>
+                <h2 id="family-heading">Our Family Members</h2>
+                <ul class="family-list">
+                    <li class="family-member">
+                        <strong>Helen:</strong> The family patriarch and the life of the party.
+                    </li>
+                    <li class="family-member">
+                        <strong>Marie:</strong> The heart and soul of the family.
+                    </li>
+                    <li class="family-member">
+                        <strong>Daniel:</strong> The tech-savvy adventurer of the family.
+                    </li>
+                    <li class="family-member">
+                        <strong>Madison:</strong> The creative and artistic member.
+                    </li>
+                    <li class="family-member">
+                        <strong>Katie:</strong> The creative and artistic member.
+                    </li>
+                    <li class="family-member">
+                        <strong>Micheal:</strong> The creative and artistic member.
+                    </li>
                     <!-- Add more family members as needed -->
                 </ul>
             </div>
@@ -42,6 +65,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Our Family Album. All rights reserved.</p>
+            <p>Made with ❤️ by Daniel Gaudreault</p>
         </div>
     </footer>
 </body>
